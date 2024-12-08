@@ -38,7 +38,7 @@ body::before {
 }
 
 .title {
-    width: 145px;
+    width: fit-content;
     height: 25px;
     font-size: 20px;
     font-weight: 700;
@@ -98,6 +98,8 @@ body::before {
 }
 
 .game-status__label {
+    width: fit-content;
+    wrap-option: nowrap;
     color: #4A5567;
     font-size: 12px;
     font-weight: 500;
