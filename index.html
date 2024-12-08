@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess The Word</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">Word Scramblle</h1>
+        </header>
+        <div class="char-random">
+            <div class="char-random__container">
+                <div>r</div>
+                <div>e</div>
+                <div>l</div>
+                <div>o</div>
+                <div>w</div>
+                <div>f</div>
+            </div>
+        </div>
+        <section class="game-details">
+            <article class="game-status">
+                <p class="game-status__label">Tries (4/5):</p>
+                <div class="tries-container">
+                    <div class="tries active"></div>
+                    <div class="tries active"></div>
+                    <div class="tries active"></div>
+                    <div class="tries active"></div>
+                    <div class="tries"></div>
+                </div>
+            </article>
+            <article class="game-status">
+                <p class="game-status__label">Mistakes:</p>
+                <p class="mistakes-char-container">a, e, w, t </p>
+            </article>
+        </section>
+        <section class="player-selected-container">
+            <div class="player-selected">
+                <div class="player-selected__wrapper">
+                    <p class="player-selected__char">f</p>
+                </div>
+                <div class="player-selected__wrapper">
+                    <p class="player-selected__char">l</p>
+                </div>
+                <div class="player-selected__wrapper">
+                    <p class="player-selected__char">o</p>
+                </div>
+                <div class="player-selected__wrapper">
+                    <p class="player-selected__char">w</p>
+                </div>
+                <div class="player-selected__wrapper waiting">
+                    <p class="player-selected__char">_</p>
+                </div>
+                <div class="player-selected__wrapper">
+                    <p class="player-selected__char"></p>
+                </div>
+            </div>
+        </section>
+        <section class="action">
+            <button class="btn btn--primary">Random</button>
+            <button class="btn btn--secondary">Reset</button>
+        </section>
+    </div>
+</body>
+</html>

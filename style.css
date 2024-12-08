@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Outfit, sans-serif;
+}
+
+body {
+    background: linear-gradient(69.64deg, #7429C6 0%, #C951E7 100%);
+    overflow: hidden;
+    height: 100vh;
+}
+
+body::before {
+    content: "Guess the word";
+    color: rgba(227, 232, 239, 0.30);
+    font-size: 12.5rem;
+    font-weight: 500;
+    letter-spacing: -0.125rem;
+    position: fixed;
+    white-space: nowrap;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    width: 417px;
+    height: 394px;
+    border-radius: 12px;
+    background: linear-gradient(135.52deg, #030616 0.65%, #20293A 100%);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 26px 32px;
+}
+
+.title {
+    width: 145px;
+    height: 25px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25.2px;
+    letter-spacing: -0.01em;
+    margin: 0 auto;
+    padding: 24px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #7429C6 4.95%, #C951E7 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.char-random {
+    width: 365px;
+    border-radius: 5px;
+    padding: 12px 80px;
+    background: #4A5567;
+    box-shadow: 0px 4px 0px 0px #030616;
+    margin: 0 auto 24px;
+}
+
+.char-random__container {
+    width: fit-content;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40.32px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #97A3B6;
+}
+
+.char-random__container div {
+    cursor: pointer;
+}
+
+.game-details {
+    width: fit-content;
+    display: flex;
+    gap: 62px;
+    margin: 0 auto 52px;
+}
+
+.game-status {
+    width: 118px;
+    height: 15px;
+    display: flex;
+    gap: 8px;
+}
+
+.game-status__label {
+    color: #4A5567;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15.12px;
+    letter-spacing: -0.01em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.tries-container {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.tries {
+    width: 6px;
+    height: 6px;
+    background-color: #394150;
+    border-radius: 50%;
+}
+
+.tries.active {
+    background-color: #7429C6;
+}
+
+.mistakes-char-container {
+    width: fit-content;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.16px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: #97A3B6;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.player-selected {
+    display: flex;
+    gap: 6px;
+    width: fit-content;
+    margin: 0 auto 52px;
+}
+
+.player-selected__wrapper {
+    display: inline-flex;
+    padding: 8px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 2px solid #4A5567;
+}
+
+.player-selected__char {
+    width: 12px;
+    height: fit-content;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25.2px;
+    letter-spacing: -0.01em;
+    display: flex;
+    justify-content: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #F2F5F9;
+}
+
+.player-selected__wrapper.waiting {
+    border-color: #7B248A;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.btn {
+    height: 36px;
+    border-radius: 8px;
+    border: none;
+    background-color: #C951E7;
+    box-shadow: 0px 4px 0px 0px #7B248A;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.64px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    cursor: pointer;
+    color: #F2F5F9;
+}
+
+.btn--primary {
+    width: 124px;
+}
+
+.btn--secondary {
+    width: 106px;
+}
+
+
+
+
+
