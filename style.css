@@ -50,6 +50,8 @@ body::before {
     justify-content: center;
     align-items: center;
     background: linear-gradient(90deg, #7429C6 4.95%, #C951E7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
 }
