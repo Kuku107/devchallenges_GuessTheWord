@@ -99,7 +99,7 @@ body::before {
 
 .game-status__label {
     width: fit-content;
-    wrap-option: nowrap;
+    white-space: nowrap;
     color: #4A5567;
     font-size: 12px;
     font-weight: 500;
@@ -136,7 +136,7 @@ body::before {
     color: #97A3B6;
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-end;
+    align-content: center;
 }
 
 .player-selected {
@@ -188,7 +188,7 @@ body::before {
     border: none;
     background-color: #C951E7;
     box-shadow: 0px 4px 0px 0px #7B248A;
-
+    outline: none;
     font-size: 14px;
     font-weight: 500;
     line-height: 17.64px;
